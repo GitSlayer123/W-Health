@@ -1,0 +1,14 @@
+# initialize local git repo (if you haven't already)
+git init
+git add .
+git commit -m "Initial commit - WHealth app"
+
+# create GitHub repo (Option A: using gh CLI)
+# replace GitSlayer123/whealth-app with your username/repo
+gh repo create GitSlayer123/whealth-app --public --source=. --push
+
+# Option B: If you don't have gh CLI, create repo on github.com manually,
+# then run (replace placeholders):
+git remote add origin https://github.com/GitSlayer123/whealth-app.git
+git branch -M main
+git push -u origin main
